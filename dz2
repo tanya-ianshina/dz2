@@ -1,0 +1,18 @@
+#ДЗ2
+def plus(a,b):
+  a = [int(i) for i in input().split()]
+  b = [int(i) for i in input().split()]
+  c = []
+  l_a = len(a)
+  l_b = len(b)
+  max = max(l_a, l_b)
+  min = min(l_a, l_b)
+  for i in range(max):
+      if i >= min:
+          if l_a < l_b:
+            c.append(0+b[i])
+          elif l_a > l_b:
+            c.append(a[i]+0)
+      else:
+          c.append(a[i]+b[i])
+  print(c)
